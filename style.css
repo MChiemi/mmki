@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*
+使用するカラー
+#007AB7 濃い青
+#6CBAD8 footer
+#000000
+#FFFFFF
+
+#007AB7の透明度90%
+#EDA184の透明度20%
+#64C99Bの透明度20%
+
+#F4F4F4
+#000000の透明度25%
+#8F8F8F
+sp:max-width:768px
+*/
+
+/* mobile first*/
+/*header部分のCSS*/
+
+/*.globalNav{
+    display:none;ドロワーメニューのため、普段は非表示
+}*/
+
+header{
+    max-width: 768px;
+    height: 667px;
+    width:100%;
+    background: url(../images/toNav/spHeroImg.png) no-repeat right center/cover;
+    position:relative;
+    padding-top: 4px;
+}
+.headerContainer{
+
+    margin:0 20px 0 20px;
+    height: 663px;
+    border: 1px solid #FF0000;
+    border-bottom: none;
+}
+header h1{
+    position:absolute;
+    top: 116px;
+    left:68px;
+}
+header .snsIcons{
+    position:absolute;
+    bottom:70px;
+}
+
+header .snsIcons nav ul li{
+    margin-bottom:20px;
+}
+
+header .cityGuide{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    position:absolute;
+    bottom:0;
+    width: 247px;
+    right:20px;
+}
+
+/*パンくずナビゲーション*/
+.mainContainer{
+    margin:0 20px;
+    border-left: 1px solid #FF0000;
+    border-right: 1px solid #FF0000;
+}
+.breadCrumb{
+    width:100%;
+    border-bottom: 1px solid #000000;
+}
+.breadCrumb nav ul{
+    display:flex;
+    padding:8px 0;
+    margin:0;
+}
+.breadCrumb nav ul li{
+    list-style: none;
+}
+.breadCrumb nav ul li a{
+    text-decoration: none;
+    color:#000000;
+}
+/*main部分*/
+main{
+    margin-bottom:10px;
+}
+.containerBottomLine{
+    border-bottom: 1px solid #FF0000;
+}
+/*footer部分のCSS*/
+footer{
+    max-width: 768px;
+    background-color: #007AB7;
+    color:#FFFFFF;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.footerContainer{
+    border-left: 1px solid #FF0000;
+    border-right: 1px solid #FF0000;
+    margin:0 20px;
+}
+
+.flag{
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.flag img{
+    width: 34px;
+    height: 24px;
+}
+
+.footerNav{
+    width: 195px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: left;
+}
+.footerNav ul{
+    padding-left: 0;
+}
+.footerNav nav ul li{
+    width:100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom:6px;
+    margin-top:12px;
+}
+
+.footerUnder{
+    display:flex;
+}
+.footerLogo{
+    width: 71px;
+    height: 28px;
+    background: url(../images/spFooterLogo.png)  no-repeat right center/cover;
+    margin-right:24px;
+}
+.snsNav ul{
+    display:flex;
+    justify-content: space-between;
+    width:143px;
+    padding:0;
+    margin:0;
+}
+
+.snsNav ul li img{
+    display:block;
+    width: 32px;
+    height: 32px;
+
+}
+
+.footerContainer > p{
+    margin-top:24px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width:769px){
+    
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    /* line-height: ;  行間*/
+    color: 000000;
+  }
+
+ /* 画像１０枚の大きさ指定する*/
+
+.imgkyuuhunMain img {
+    height: 221px;
+    width: 295px;
+ }
+
+.imgkyuuhunMain {
+    text-align: center;
+}
+
+.imgTaipeiMain img {
+    height: 221px;
+    width: 295px;
+ }
+
+.imgTaipeiMain {
+    text-align: center;
+}
+
+.imageContainerSub img {
+    height: 225px;
+    width: 137.5px;
+  }
+
+.imgNightMarket1 img {
+    height: 122px;
+    width: 183px;
+}
+
+.imgNightMarket1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imgNightMarket2 img {
+    height: 122px;
+    width: 183px;
+}
+
+.imgNightMarket2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.accessMainimg img {
+    height: 134px;
+    width: 335px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yuuyuuCard img {
+    height: 61px;
+    width: 95px;
+}
+
+.yuuyuuCard {
+    text-align: center;
+}
+
+ /* タイトルつくる*/
+
+h2, h3 {
+    display: inline-block;   /* 横並びにした*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+ /*文字フォント、サイズ*/
+h2 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+ /*タイトルの背景に画像入れる*/
+.attraction {
+    background-image: url(../images/toMobile/見出し背景画像.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+.nightMarket {
+    background-image: url(../images/toMobile/見出し背景画像.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.access {
+    background-image: url(../images/toMobile/見出し背景画像.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ /*文字の背景ブルーにする*/
+.textLong {
+    background-color:  rgba(108, 186, 216, 0.2) ;
+    width: 295px;
+    display: block;
+    margin: 20px auto;
+    padding: 8px 36px;
+}
+
+.textKyuuhunSub {
+    background-color:  rgba(108, 186, 216, 0.2) ;
+    font-size: 12px;
+    line-height: 20px;
+    width: 295px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    padding: 8px 21.5px;
+}
+
+.textTaipeiSub {
+    background-color:  rgba(108, 186, 216, 0.2) ;
+    font-size: 12px;
+    line-height: 20px;
+    width: 295px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+span {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+ /*サブタイトル文字*/
+h4 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+ }
+
+.taipeiAccess h4 {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+}
+
+dt {
+    display: block;
+    width: 223px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+dl {
+    display: block;
+    width: 223px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.textNightMarket {
+    display: block;
+    width: 223px;
+    margin: 0 auto;
+}
+
+ /*水平線をカスタマイズ*/
+ hr {
+    border: none; /* デフォルトのボーダーを削除 */
+    height: 2px; /* 線の高さ */
+    background-color: black; /* 線の色 */
+    margin: 20px 0; /* 上下のマージン */
+    width: 223px; /* 長さ */
+    /* 中央寄せにするために以下のスタイルを追加 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /*画像横並び*/
+.imageContainerSub {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*背景画像*/
+
+button {
+    background-image: url('../images/toMobile/bottomFlame.png'); /* 背景画像を設定 */
+    background-size: cover; /* 背景画像をボタン全体にカバー */
+    height: 48px;
+    width: 131.5px;
+    background-position: center; /* 背景画像を中央に配置 */
+     /* padding: ; パディングを設定 */
+    text-align: center; /* テキストを中央揃え */
+    text-decoration: none; /* テキストの下線を除去 */
+    display: inline-block; /* インラインブロック要素に設定 */
+    font-size: 12px; /* フォントサイズを設定 */
+    /*margin: ;  マージンを設定 */
+    /*cursor: ;  カーソルをポインターに設定 */
+    border: none; /* 枠線を除去 */
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px; /* 画像間のスペースを適宜調整 */
+    margin-left: 20px;
+}
+
+.nightMarket {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.access {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
