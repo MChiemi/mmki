@@ -430,6 +430,14 @@ button {
     margin-bottom: 40px;
 }
 
+.containerAccess {
+    width: 66%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+
 /* PC版 */
 
 @media screen and (min-width:769px){
@@ -611,14 +619,6 @@ hr {
     width: 40%; /*線を40%にする*/
 }
 
-.accessMainimg p {
-    width: 96%;
-}
-
-.accessMainimg p img {
-    max-width: 100%;
-}
-
 dl {
     display: flex;
 }
@@ -682,6 +682,7 @@ h2 {
 }
 
 h4 {
+    padding-top: 60px;
     margin-left: 20px;
     font-size: 36px;
 } 
@@ -715,5 +716,20 @@ dd {
     font-size: 24px;
     line-height: 38.4px;
 }
+
+.accessMainimg p {
+    width: 96%;
+}
+
+.accessMainimg p img {
+    max-width: 100%;
+}
+
+.containerAccess dt :defined {
+    display: flex;
+}
+
+
+
 
 }
